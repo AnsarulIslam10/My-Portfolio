@@ -1,6 +1,6 @@
 import React from "react";
 import image2 from "../../../assets/profile-pic (2).png";
-import bg from "../../../assets/bg.jpg";
+import resume from "../../../assets/Basic_Resume.docx.pdf";
 import back from "../../../assets/back.jpg";
 const Hero = () => {
   return (
@@ -11,7 +11,7 @@ const Hero = () => {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "right center",
         backgroundSize: "cover",
-         transform: "scaleX(1)"
+        transform: "scaleX(1)",
       }}
     >
       <div className="text-center md:text-start">
@@ -22,7 +22,12 @@ const Hero = () => {
           Turning lines of code into captivating digital experiences. Let's
           build something amazing!
         </p>
-        <button className="btn btn-outline mt-6">Download Resume</button>
+        <a
+          href={resume}
+          download
+        >
+          <button className="btn btn-outline mt-6">Download Resume</button>
+        </a>
       </div>
       <div>
         <img className="w-[300px]" src={image2} alt="" />

@@ -1,13 +1,25 @@
 import { NavLink } from "react-router-dom";
-
+import resume from "../../assets/Basic_Resume.docx.pdf"
 const Navbar = () => {
-    const links = <>
-    <li><NavLink to={'/'}>Home</NavLink></li>
-    <li><NavLink to={'/home/about'}>About Me</NavLink></li>
-    <li><NavLink to={'/home/skills'}>Skills</NavLink></li>
-    <li><NavLink to={'/home/projects'}>Projects</NavLink></li>
-    <li><NavLink to={'/home/contact'}>Contact</NavLink></li>
+  const links = (
+    <>
+      <li>
+        <NavLink to={"/"}>Home</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/home/about"}>About Me</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/home/skills"}>Skills</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/home/projects"}>Projects</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/home/contact"}>Contact</NavLink>
+      </li>
     </>
+  );
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -38,12 +50,12 @@ const Navbar = () => {
         <a className="btn btn-ghost text-xl">Riyad</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          {links}
-        </ul>
+        <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-outline">Download Resume</a>
+        <a href={resume} download>
+          <button className="btn btn-outline mt-6">Download Resume</button>
+        </a>
       </div>
     </div>
   );

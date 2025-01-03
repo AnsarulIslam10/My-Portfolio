@@ -4,7 +4,7 @@ import Lottie from "lottie-react";
 
 const About = () => {
   return (
-    <div className="py-12 px-6">
+    <div id="about" className="py-12 px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center my-24">
         <div className="flex justify-center md:justify-start">
           <div className="hover:scale-110 transform transition duration-300">

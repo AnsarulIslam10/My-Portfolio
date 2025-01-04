@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "Chill Gamer",
+      "description": "A game review website with user-friendly features.",
+      "image": "https://i.ibb.co.com/YT1D8Rn/Chill-gamer-dark.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Volunteer Platform",
+      "description": "A platform to connect volunteers with various events.",
+      "image": "https://i.ibb.co.com/Y2DxdCW/Volunteer-dark.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Discount Pro",
+      "description": "A website to collect discount coupons from various e-commerce platforms.",
+      "image": "https://i.ibb.co.com/Cv5fSN5/Discount-Pro.jpg"
+    }
+  ]
+  

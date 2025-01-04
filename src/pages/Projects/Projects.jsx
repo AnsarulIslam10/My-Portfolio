@@ -1,0 +1,49 @@
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
+const Projects = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetch("projects.json")
+      .then((res) => res.json())
+      .then((data) => setProjects(data));
+  }, []);
+
+  return (
+    <section id="projects" className="my-16 px-4 md:px-12 lg:px-20">
+      <h2 className="text-5xl font-bold text-center mb-12 text-white">
+        My Projects
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className="group relative bg-slate-800 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl"
+          >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-64 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-2xl font-semibold text-white">
+                {project.title}
+              </h3>
+              <p className="text-gray-300 mt-2">{project.description}</p>
+              {/* View More Button */}
+              <Link
+                to={`/project/${project.id}`}
+                className="absolute bottom-0 left-0 right-0 btn btn-lg bg-slate-900 transform translate-y-full transition-all duration-500 text-teal-500 group-hover:translate-y-0"
+              >
+                View Details
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

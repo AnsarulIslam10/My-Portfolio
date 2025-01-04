@@ -1,20 +1,42 @@
 import React from "react";
+import educationAnimation from "../../../assets/education.json";
+import cnpi from "../../../assets/cnpi.jpeg";
+import Lottie from "lottie-react";
 
 const Education = () => {
   return (
-    <section id="education" className="my-16 px-4 md:px-12 lg:px-20">
+    <section id="education" className="my-16 px-4 md:px-12 lg:px-20 relative">
       <h2 className="text-5xl font-bold text-center mb-12 text-white">
         Education
       </h2>
-      <div className="bg-slate-800 p-8 rounded-lg shadow-md">
-        <h3 className="text-3xl font-semibold mb-4 text-teal-400">
-          Diploma in Computer Technology
-        </h3>
-        <p className="text-xl mb-2">Chapainawabganj Polytechnic Institute</p>
-        <p className="text-lg text-gray-300">
-          Current Semester: 8th (Final Semester)
-        </p>
-        <p className="text-lg text-gray-400 mt-2">Expected Graduation: 2025</p>
+      {/* Container with overlay */}
+      <div
+        className="flex items-center justify-around bg-slate-800 p-8 rounded-lg shadow-md relative"
+        style={{
+          backgroundImage: `url(${cnpi})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black opacity-85 rounded-lg"></div>
+
+        <div className="relative z-10">
+          <h3 className="text-4xl font-semibold mb-6 text-teal-400">
+            Diploma in Computer Technology
+          </h3>
+          <p className="text-xl mb-2">Chapainawabganj Polytechnic Institute</p>
+          <p className="text-lg text-gray-300">
+            Current Semester: 8th (Final Semester)
+          </p>
+          <p className="text-lg text-gray-400 mt-2">
+            Expected Graduation: 2025
+          </p>
+        </div>
+        <div className="relative z-10">
+          <Lottie className="w-64" animationData={educationAnimation} />
+        </div>
       </div>
     </section>
   );

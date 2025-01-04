@@ -1,21 +1,42 @@
 [
-    {
-      "id": 1,
-      "title": "Chill Gamer",
-      "description": "A game review website with user-friendly features.",
-      "image": "https://i.ibb.co.com/YT1D8Rn/Chill-gamer-dark.jpg"
+  {
+    "name": "Chill Gamer",
+    "description": "Chill Gamer is a user-friendly game review application. Here users can explore and share game reviews.",
+    "image": "https://i.ibb.co/YT1D8Rn/Chill-gamer-dark.jpg",
+    "technologies": [
+      { "name": "React.js", "logo": "./logos/react.svg" },
+      { "name": "Tailwind CSS", "logo": "/logos/tailwind-logo.png" },
+      { "name": "Node.js", "logo": "/logos/node-logo.png" },
+      { "name": "MongoDB", "logo": "/logos/mongodb-logo.png" },
+      { "name": "Express.js", "logo": "/logos/express-logo.png" }
+    ],
+    "liveLink": "https://chill-gamer-351bd.web.app",
+    "githubClient": "https://github.com/programming-hero-web-course2/b10-a10-client-side-AnsarulIslam10",
+    "githubServer": "https://github.com/programming-hero-web-course2/b10-a10-server-side-AnsarulIslam10",
+    "challenges": "It was challenging for me to implement sort and filter together",
+    "features": {
+      "Game Reviews": "Browse through a collection of user reviews for the latest games across multiple genres.",
+      "Add Review": "Users can add their own reviews for games, and rate games based on their personal experience.",
+      "My Reviews": "Users can view and manage their own reviews, including the ability to update or delete them.",
+      "My Watchlist": "Add games to your personal watchlist and easily access your favorite ones.",
+      "Theme Toggle": "Switch between light and dark themes for a comfortable viewing experience.",
+      "Sort": "Easily sort games by rating and year.",
+      "Filter": "Easily filter games by genre.",
+      "Responsive Design": "Enjoy a seamless experience across all devices, from desktop to mobile."
     },
-    {
-      "id": 2,
-      "title": "Volunteer Platform",
-      "description": "A platform to connect volunteers with various events.",
-      "image": "https://i.ibb.co.com/Y2DxdCW/Volunteer-dark.jpg"
-    },
-    {
-      "id": 3,
-      "title": "Discount Pro",
-      "description": "A website to collect discount coupons from various e-commerce platforms.",
-      "image": "https://i.ibb.co.com/Cv5fSN5/Discount-Pro.jpg"
-    }
-  ]
-  
+    "futureImprovement": "I aim to enhance the user experience by resolving the issue of images taking too long to load. Additionally, I plan to redesign the add and update game forms, as I'm not fully satisfied with their current appearance.",
+    "creationDate": "8/12/2024"
+  },
+  {
+    "id": 2,
+    "title": "Volunteer Platform",
+    "description": "A platform to connect volunteers with various events.",
+    "image": "https://i.ibb.co.com/Y2DxdCW/Volunteer-dark.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Discount Pro",
+    "description": "A website to collect discount coupons from various e-commerce platforms.",
+    "image": "https://i.ibb.co.com/Cv5fSN5/Discount-Pro.jpg"
+  }
+]

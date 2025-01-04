@@ -1,23 +1,50 @@
 import { NavLink } from "react-router-dom";
-import resume from "../../assets/Basic_Resume.docx.pdf"
+import resume from "../../assets/Basic_Resume.docx.pdf";
+import { Link } from 'react-scroll';
 const Navbar = () => {
   const links = (
     <>
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#about">About Me</a>
-      </li>
-      <li>
-        <a href="#skills">Skills</a>
-      </li>
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
-      <li>
-        <a href="#contact">Contact</a>
-      </li>
+      <Link
+        to={"/"}
+        smooth={true}
+        duration={500}
+        className="relative px-2 cursor-pointer transition duration-200 hover:text-[#60f318]"
+      >
+        Home
+      </Link>
+
+      <Link
+        to={"about"}
+        smooth={true}
+        duration={500}
+        className="relative px-2 cursor-pointer transition duration-200 hover:text-[#60f318]"
+      >
+        About Me
+      </Link>
+
+      <Link
+        to={"skills"}
+        duration={500}
+        className="relative px-2 cursor-pointer transition duration-200 hover:text-[#60f318]"
+      >
+        Skills
+      </Link>
+
+      <Link
+        to={"projects"}
+        duration={500}
+        className="relative px-2 cursor-pointer transition duration-200 hover:text-[#60f318]"
+      >
+        Projects
+      </Link>
+
+      <Link
+        to={"contact"}
+        duration={500}
+        className="relative px-2 cursor-pointer transition duration-200 hover:text-[#60f318]"
+      >
+        Contact
+      </Link>
     </>
   );
   return (

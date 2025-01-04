@@ -1,5 +1,6 @@
 import React from "react";
 import riyadpfp from "../../../assets/riyad pfp.png";
+import riyadpfp2 from "../../../assets/riyad pfp 2.png";
 import riyad from "../../../assets/Riyad.png";
 import resume from "../../../assets/Basic_Resume.docx.pdf";
 import back from "../../../assets/back.jpg";
@@ -53,7 +54,7 @@ const Hero = () => {
 
       <div className="relative z-10 mt-6 md:mt-0">
         <img
-          className="w-[450px] bg-slate-400 border-t-cyan-500 border-t-[20px] border-r-[20px] border-r-cyan-500 rounded-full shadow-lg transform transition duration-300 hover:scale-105"
+          className="w-[450px] bg-pink-200 border-t-cyan-500 border-t-[20px] border-r-[20px] border-r-cyan-500 rounded-full shadow-lg transform transition duration-300 hover:scale-105"
           src={riyadpfp}
           alt="Ansarul Islam"
         />

@@ -13,6 +13,7 @@ const Hero = () => {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
+        backgroundAttachment: 'fixed'
       }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>

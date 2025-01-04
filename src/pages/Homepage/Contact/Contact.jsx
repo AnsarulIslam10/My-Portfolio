@@ -1,5 +1,8 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { MdEmail } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
 const Contact = () => {
   const form = useRef();
 
@@ -89,26 +92,26 @@ const Contact = () => {
         <div className="text-white md:w-1/2 md:pl-8">
           <h3 className="text-2xl font-semibold mb-4">Contact Info</h3>
           <div className="mb-4">
-            <p className="text-xl">Location: Your City, Country</p>
+            <p className="text-xl flex items-center gap-2"><FaLocationDot className="text-3xl"/> Your City, Country</p>
           </div>
           <div className="mb-4">
-            <p className="text-xl">
-              Email:{" "}
+            <p className="text-xl flex items-center gap-2">
+              <MdEmail className="text-3xl"/>{" "}
               <a href="mailto:example@gmail.com" className="text-teal-500">
-                example@gmail.com
+                ansarulislam01739@gmail.com
               </a>
             </p>
           </div>
           <div>
-            <p className="text-xl">
-              WhatsApp:{" "}
+            <p className="text-xl flex items-center gap-2">
+              <FaWhatsapp className="text-3xl"/>
               <a
                 href="https://wa.me/xxxxxxxxxxxx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-teal-500"
               >
-                xxxxxxxxxxxx
+                +88 01739-702012
               </a>
             </p>
           </div>

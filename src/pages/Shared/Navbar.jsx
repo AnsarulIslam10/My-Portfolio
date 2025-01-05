@@ -3,14 +3,12 @@ import { Link } from 'react-scroll';
 const Navbar = () => {
   const links = (
     <>
-      <Link
-        to={"/"}
-        smooth={true}
-        duration={500}
+      <a
+        href="#"
         className="relative px-2 cursor-pointer transition duration-200 hover:text-[#60f318]"
       >
         Home
-      </Link>
+      </a>
 
       <Link
         to={"about"}

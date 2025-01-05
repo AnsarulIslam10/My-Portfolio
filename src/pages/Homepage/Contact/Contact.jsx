@@ -90,7 +90,7 @@ const Contact = () => {
 
         {/* Contact Info */}
         <div className="text-cyan-500 md:w-1/2 md:pl-8">
-          <h3 className="text-2xl font-semibold mb-4 text-cyan-300">Contact Info</h3>
+          <h3 className="text-2xl font-semibold mb-12 text-cyan-300">Contact Info</h3>
           <div className="mb-4">
             <p className="text-xs sm:text-lg md:text-xl flex items-center gap-2 "><FaLocationDot className="text-xl sm:text-2xl md:text-3xl"/> Rajshahi, Bangladesh</p>
           </div>

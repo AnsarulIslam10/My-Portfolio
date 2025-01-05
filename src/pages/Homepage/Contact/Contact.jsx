@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
+import Swal from "sweetalert2";
 const Contact = () => {
   const form = useRef();
 
@@ -21,6 +22,13 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          form.current.reset()
+          Swal.fire({
+            icon: "success",
+            title: "Email sent successfully",
+            showConfirmButton: false,
+            timer: 1500
+          });
         },
         (error) => {
           console.log("FAILED...", error.text);

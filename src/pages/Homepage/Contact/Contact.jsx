@@ -29,19 +29,19 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="my-16 px-4 md:px-12 lg:px-20">
-      <h2 className="text-5xl font-bold text-center mb-12 text-white">
+    <section id="contact" className="my-16">
+      <h2 className="text-5xl font-bold text-center mb-12 text-cyan-500">
         Contact Information
       </h2>
       <div className="bg-slate-800 p-8 rounded-lg shadow-lg space-y-8 md:space-y-0 md:flex md:justify-between md:items-start">
         {/* Contact Form */}
         <div className="space-y-6 md:w-1/2">
-          <h3 className="text-3xl font-semibold text-white mb-4">
+          <h3 className="text-2xl sm:text-3xl font-semibold text-cyan-300 mb-4">
             Send a Message
           </h3>
           <form ref={form} onSubmit={sendEmail} className="space-y-4">
             <div>
-              <label htmlFor="email" className="text-white">
+              <label htmlFor="email" className="text-cyan-400">
                 Your Name
               </label>
               <input
@@ -54,7 +54,7 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label htmlFor="email" className="text-white">
+              <label htmlFor="email" className="text-cyan-400">
                 Your Email
               </label>
               <input
@@ -67,7 +67,7 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label htmlFor="message" className="text-white">
+              <label htmlFor="message" className="text-cyan-400">
                 Your Message
               </label>
               <textarea
@@ -81,7 +81,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="w-full p-3 bg-teal-500 text-white rounded-lg hover:bg-teal-600"
+              className="w-full p-3 bg-cyan-500 text-black rounded-lg hover:bg-teal-600"
             >
               Send Message
             </button>
@@ -89,29 +89,29 @@ const Contact = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="text-white md:w-1/2 md:pl-8">
-          <h3 className="text-2xl font-semibold mb-4">Contact Info</h3>
+        <div className="text-cyan-500 md:w-1/2 md:pl-8">
+          <h3 className="text-2xl font-semibold mb-4 text-cyan-300">Contact Info</h3>
           <div className="mb-4">
-            <p className="text-xl flex items-center gap-2"><FaLocationDot className="text-3xl"/> Your City, Country</p>
+            <p className="text-xs sm:text-lg md:text-xl flex items-center gap-2 "><FaLocationDot className="text-xl sm:text-2xl md:text-3xl"/> Rajshahi, Bangladesh</p>
           </div>
           <div className="mb-4">
-            <p className="text-xl flex items-center gap-2">
-              <MdEmail className="text-3xl"/>{" "}
-              <a href="mailto:example@gmail.com" className="text-teal-500">
+            <p className="text-xs sm:text-lg md:text-xl flex items-center gap-2">
+              <MdEmail className="text-xl sm:text-2xl md:text-3xl"/>{" "}
+              <a className="">
                 ansarulislam01739@gmail.com
               </a>
             </p>
           </div>
           <div>
-            <p className="text-xl flex items-center gap-2">
-              <FaWhatsapp className="text-3xl"/>
+            <p className="text-xs sm:text-lg md:text-xl flex items-center gap-2">
+              <FaWhatsapp className="text-xl sm:text-2xl md:text-3xl"/>
               <a
-                href="https://wa.me/xxxxxxxxxxxx"
+                href="https://www.whatsapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-teal-500"
+                className=""
               >
-                +88 01739-702012
+                +880 1739-702012
               </a>
             </p>
           </div>

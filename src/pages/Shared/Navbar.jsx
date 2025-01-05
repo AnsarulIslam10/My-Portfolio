@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import resume from "../../assets/Basic_Resume.docx.pdf";
 import { Link } from 'react-scroll';
 const Navbar = () => {
@@ -17,6 +16,7 @@ const Navbar = () => {
         to={"about"}
         smooth={true}
         duration={500}
+        offset={-80}
         className="relative px-2 cursor-pointer transition duration-200 hover:text-[#60f318]"
       >
         About Me
@@ -25,6 +25,7 @@ const Navbar = () => {
       <Link
         to={"skills"}
         duration={500}
+        offset={-80}
         className="relative px-2 cursor-pointer transition duration-200 hover:text-[#60f318]"
       >
         Skills
@@ -33,6 +34,7 @@ const Navbar = () => {
       <Link
         to={"projects"}
         duration={500}
+        offset={-80}
         className="relative px-2 cursor-pointer transition duration-200 hover:text-[#60f318]"
       >
         Projects
@@ -41,6 +43,7 @@ const Navbar = () => {
       <Link
         to={"contact"}
         duration={500}
+        offset={-80}
         className="relative px-2 cursor-pointer transition duration-200 hover:text-[#60f318]"
       >
         Contact
@@ -74,14 +77,14 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Riyad</a>
+        <a className=" text-cyan-500 font-bold text-lg md:text-3xl">Ansarul Islam</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
         <a href={resume} download>
-          <button className="btn btn-outline mt-6">Download Resume</button>
+          <button className="btn text-gray-900 font-bold uppercase rounded-md hover:bg-cyan-600 border-none bg-cyan-500">Download Resume</button>
         </a>
       </div>
     </div>

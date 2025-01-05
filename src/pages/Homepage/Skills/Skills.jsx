@@ -71,14 +71,14 @@ const Skills = () => {
   ];
 
   return (
-    <div id="skills" className="my-16 px-4 md:px-12 lg:px-20">
-      <h2 className="text-5xl font-bold text-center mb-12 text-white">
+    <div id="skills" className="px-4">
+      <h2 className="text-5xl font-bold text-center mb-12 text-cyan-500">
         My Skills
       </h2>
       <div className="space-y-12">
         {skills.map((skillCategory, index) => (
           <div key={index}>
-            <h3 className="text-3xl font-semibold mb-6">
+            <h3 className="text-3xl text-cyan-600 font-semibold mb-6">
               {skillCategory.category}
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">

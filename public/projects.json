@@ -1,28 +1,28 @@
 [
   {
     "name": "Chill Gamer",
-    "description": "Chill Gamer is a user-friendly game review application. Here users can explore and share game reviews.",
+    "description": "Chill Gamer is a dedicated platform for gamers to discover and share insights about the latest games. Users can browse reviews, add their own ratings, and manage a personalized watchlist. With features like theme toggling and genre filtering, Chill Gamer ensures a tailored and engaging experience for all gaming enthusiasts.",
     "image": "https://i.ibb.co/YT1D8Rn/Chill-gamer-dark.jpg",
     "technologies": [
       {
         "name": "React.js",
-        "logo": "./logos/react.svg"
+        "logo": "https://i.ibb.co.com/y0PcKNW/icons8-react-480.png"
       },
       {
         "name": "Tailwind CSS",
-        "logo": "/logos/tailwind-logo.png"
+        "logo": "https://i.ibb.co.com/vxfDG1G/icons8-tailwind-css-480.png"
       },
       {
         "name": "Node.js",
-        "logo": "/logos/node-logo.png"
+        "logo": "https://i.ibb.co.com/1qRLp1f/icons8-nodejs-480.png"
       },
       {
         "name": "MongoDB",
-        "logo": "/logos/mongodb-logo.png"
+        "logo": "https://i.ibb.co.com/v3ZzPjD/icons8-mongodb-480.png"
       },
       {
         "name": "Express.js",
-        "logo": "/logos/express-logo.png"
+        "logo": "https://i.ibb.co.com/RznBcxz/icons8-express-js-480.png"
       }
     ],
     "liveLink": "https://chill-gamer-351bd.web.app",
@@ -49,23 +49,23 @@
     "technologies": [
       {
         "name": "React.js",
-        "logo": "./logos/react.svg"
+        "logo": "https://i.ibb.co.com/y0PcKNW/icons8-react-480.png"
       },
       {
         "name": "Tailwind CSS",
-        "logo": "/logos/tailwind-logo.png"
+        "logo": "https://i.ibb.co.com/vxfDG1G/icons8-tailwind-css-480.png"
       },
       {
         "name": "Node.js",
-        "logo": "/logos/node-logo.png"
+        "logo": "https://i.ibb.co.com/1qRLp1f/icons8-nodejs-480.png"
       },
       {
         "name": "MongoDB",
-        "logo": "/logos/mongodb-logo.png"
+        "logo": "https://i.ibb.co.com/v3ZzPjD/icons8-mongodb-480.png"
       },
       {
         "name": "Express.js",
-        "logo": "/logos/express-logo.png"
+        "logo": "https://i.ibb.co.com/RznBcxz/icons8-express-js-480.png"
       }
     ],
     "liveLink": "https://volunteer-management-7efa7.web.app",
@@ -89,47 +89,35 @@
   },
   {
     "name": "Discount Pro",
-    "description": "A user-friendly platform to manage volunteer opportunities. Users can create, update, delete posts, and volunteer for others’ posts. This project is built with a focus on responsiveness, security, and seamless user experience.",
-    "image": "https://i.ibb.co.com/Y2DxdCW/Volunteer-dark.jpg",
+    "description": "The purpose of Discount Pro is to help users easily find and use discount coupons for popular e-commerce shops in Bangladesh. There are many e-commerce stores that provide various types of vouchers and coupon codes for discounts. Our application collects all available coupons from each store so that people can easily access discounts and save money.",
+    "image": "https://i.ibb.co.com/Cv5fSN5/Discount-Pro.jpg",
     "technologies": [
       {
         "name": "React.js",
-        "logo": "./logos/react.svg"
+        "logo": "https://i.ibb.co.com/y0PcKNW/icons8-react-480.png"
       },
       {
         "name": "Tailwind CSS",
-        "logo": "/logos/tailwind-logo.png"
+        "logo": "https://i.ibb.co.com/vxfDG1G/icons8-tailwind-css-480.png"
       },
       {
-        "name": "Node.js",
-        "logo": "/logos/node-logo.png"
-      },
-      {
-        "name": "MongoDB",
-        "logo": "/logos/mongodb-logo.png"
-      },
-      {
-        "name": "Express.js",
-        "logo": "/logos/express-logo.png"
+        "name": "Firebase",
+        "logo": "https://i.ibb.co.com/nnJGmFP/icons8-google-firebase-console-480.png"
       }
     ],
-    "liveLink": "https://volunteer-management-7efa7.web.app",
-    "githubClient": "https://github.com/AnsarulIslam10/Volunteer-Management-Client",
-    "githubServer": "https://github.com/AnsarulIslam10/Volunteer-Management-Server",
-    "challenges": "It was challenging for me to handle the volunteer need number count. but in the end I managed to make it work and",
+    "liveLink": "https://discount-pro-10.netlify.app",
+    "githubClient": "https://github.com/programming-hero-web-course1/b10-a9-authentication-AnsarulIslam10",
+    "challenges": "I faced challenges in designing and implementing a user-friendly UI that effectively displays discount coupons. Despite the difficulties, I worked through the design iterations and created an interface that enhances user experience.",
     "features": {
-      "Authentication System": "Login and Register with email-password authentication and Google login support.",
-      "Password Strength Validation": "Ensures secure passwords with requirements like uppercase, lowercase, and a minimum of 6 characters.",
-      "Volunteer Post Management": "Add volunteer posts with title, category, description, and deadlines. View, update, and delete own posts.",
-      "Volunteer Participation": "Volunteer for posts using a simple request form. Tracks the number of volunteers needed and dynamically updates availability.",
-      "Search": "Search posts by title to easily find relevant volunteer opportunities.",
-      "Layout": "Change layout dynamically between card and table views for better organization.",
-      "Protected Routes": "Secure user-specific content with protected routes, allowing only authorized users to manage posts.",
-      "Dynamic Document Titles": "Set dynamic document titles to improve user engagement and provide better navigation.",
-      "Dark/Light Mode Toggle": "Theme customization for improved accessibility and a comfortable viewing experience.",
-      "Responsive Design": "Seamless experience across mobile, tablet, and desktop devices, ensuring full accessibility on all screen sizes."
+      "Coupon Listings": "Explore a curated list of active discount coupons from various e-commerce platforms.",
+      "Search Functionality": "Quickly find relevant discounts using the search feature.",
+      "One-click Coupon Copy": "Easily copy coupon codes with a single click on the 'Copy Code' button.",
+      "Login & Register": "Sign up or log in with email, password, or Google account.",
+      "Profile Updates": "Update your profile name and image at any time.",
+      "Brand and Store Listings": "Browse top e-commerce brands and stores offering discounts.",
+      "Responsive Design": "Enjoy a mobile-friendly browsing experience on any device."
     },
-    "futureImprovement": "In the future, I plan to improve my site by optimizing its performance with lazy loading and making it faster. I'll focus on enhancing accessibility and ensuring it's mobile-friendly. I'll also add features like user profiles, personalized content, and improve security with two-factor authentication. I aim to boost SEO to make the site more discoverable. Regular updates and monitoring will help keep the site running smoothly and securely.",
-    "creationDate": "26/12/2024"
+    "futureImprovement": "I plan to add a backend to make the site dynamic, allowing for real-time updates and user interactions. Enhancing the UI for a more polished and intuitive design is also on the agenda, ensuring a seamless user experience. These improvements will make the site more engaging and functional.",
+    "creationDate": "21/11/2024"
   }
 ]

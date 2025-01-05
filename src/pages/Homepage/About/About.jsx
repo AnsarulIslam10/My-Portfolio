@@ -4,7 +4,7 @@ import Lottie from "lottie-react";
 
 const About = () => {
   return (
-    <div id="about" className="py-12 px-6">
+    <div id="about" className="md:py-12 px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center my-24">
         <div className="flex justify-center md:justify-start">
           <div className="hover:scale-110 transform transition duration-300">
@@ -13,10 +13,10 @@ const About = () => {
         </div>
 
         <div className="text-white space-y-6">
-          <h1 className="text-5xl font-bold mb-4 text-center md:text-left">
+          <h1 className="text-5xl text-cyan-500 font-bold mb-4 text-center md:text-left">
             About Me
           </h1>
-          <p className="text-lg md:text-xl leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-400 leading-relaxed">
             I’m Ansarul Islam, a frontend developer who began programming in
             2020 during the COVID lockdown. At first, I learned the basics of
             HTML, CSS, and Bootstrap, but I struggled with consistency and

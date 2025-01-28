@@ -26,12 +26,12 @@ const Education = () => {
           <h3 className="text-4xl font-semibold mb-6 text-cyan-500">
             Diploma in Computer Technology
           </h3>
-          <p className="text-xl text-cyan-200 mb-2">Chapainawabganj Polytechnic Institute</p>
+          <p className="text-xl text-cyan-200 mb-1">Chapainawabganj Polytechnic Institute</p>
           <p className="text-lg text-cyan-200">
-            Current Semester: 8th (Final Semester)
+            Status: Completed
           </p>
-          <p className="text-lg text-cyan-200 mt-2">
-            Expected Graduation: 2025
+          <p className="text-lg text-cyan-200">
+            Duration: 2020 - 2025
           </p>
         </div>
         <div className="relative hidden sm:block z-10">

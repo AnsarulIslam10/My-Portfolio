@@ -1,7 +1,7 @@
 import React from "react";
 import riyadpfp from "../../../assets/ansarul.png";
-import riyad from "../../../assets/riyad.png";
-import resume from "../../../assets/Basic_Resume.docx.pdf";
+import riyad from "../../../assets/2.jpg";
+import resume from "../../../assets/Resume_of_Ansarul_Islam.pdf";
 import back from "../../../assets/back.jpg";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -65,7 +65,7 @@ const Hero = () => {
       <div className="relative z-10 mt-6 md:mt-0">
         <img
           className="w-[380px] rounded-full border-8 border-cyan-600 transform transition duration-300 hover:scale-105"
-          src={riyadpfp}
+          src={riyad}
           alt="Ansarul Islam"
         />
 

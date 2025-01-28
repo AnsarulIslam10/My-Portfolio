@@ -1,4 +1,4 @@
-import resume from "../../assets/Basic_Resume.docx.pdf";
+import resume from "../../assets/Resume_of_Ansarul_Islam.pdf";
 import { Link } from 'react-scroll';
 const Navbar = () => {
   const links = (

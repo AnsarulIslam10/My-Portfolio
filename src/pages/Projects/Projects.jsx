@@ -35,10 +35,10 @@ const Projects = () => {
             <img
               src={project.image}
               alt={project.name}
-              className="w-full h-64 object-cover"
+              className="w-full px-6 pt-6 h-64 object-cover"
             />
             <div className="p-6 flex-1">
-              <h3 className="text-2xl font-semibold text-cyan-500">
+              <h3 className="text-3xl mb-2 font-semibold text-cyan-500">
                 {project.name}
               </h3>
               <p className="text-gray-300 mt-2">

@@ -3,7 +3,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="max-w-7xl mx-auto px-2 flex flex-col sm:flex-row justify-between bg-slate-800 items-center gap-4 p-6">
+    <footer className=" w-full flex flex-col sm:flex-row justify-between bg-slate-800/50 items-center gap-4 p-6">
       <aside className="flex flex-col sm:flex-row items-center">
         <img
           className="w-10"

@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
       <a
         href="#"
-        className="relative px-2 cursor-pointer transition duration-200 hover:text-[#60f318]"
+        className="relative text-white px-2 cursor-pointer transition duration-200 hover:text-cyan-500"
       >
         Home
       </a>
@@ -15,7 +15,7 @@ const Navbar = () => {
         smooth={true}
         duration={500}
         offset={-80}
-        className="relative px-2 cursor-pointer transition duration-200 hover:text-[#60f318]"
+        className="relative text-white px-2 cursor-pointer transition duration-200 hover:text-cyan-500"
       >
         About Me
       </Link>
@@ -24,7 +24,7 @@ const Navbar = () => {
         to={"skills"}
         duration={500}
         offset={-80}
-        className="relative px-2 cursor-pointer transition duration-200 hover:text-[#60f318]"
+        className="relative text-white px-2 cursor-pointer transition duration-200 hover:text-cyan-500"
       >
         Skills
       </Link>
@@ -33,7 +33,7 @@ const Navbar = () => {
         to={"projects"}
         duration={500}
         offset={-80}
-        className="relative px-2 cursor-pointer transition duration-200 hover:text-[#60f318]"
+        className="relative text-white px-2 cursor-pointer transition duration-200 hover:text-cyan-500"
       >
         Projects
       </Link>
@@ -42,14 +42,14 @@ const Navbar = () => {
         to={"contact"}
         duration={500}
         offset={-80}
-        className="relative px-2 cursor-pointer transition duration-200 hover:text-[#60f318]"
+        className="relative text-white px-2 cursor-pointer transition duration-200 hover:text-cyan-500"
       >
         Contact
       </Link>
     </>
   );
   return (
-    <div className="navbar  sticky top-0 z-20 backdrop-blur-lg">
+    <div className="navbar sticky top-0 z-20 backdrop-blur-lg">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

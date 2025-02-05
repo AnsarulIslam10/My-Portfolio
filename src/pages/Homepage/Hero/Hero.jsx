@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
       <div className="relative z-10 text-center md:text-start">
-        <h3 className="text-2xl font-semibold text-gray-300">Hello, I'm</h3>
+        {/* <h3 className="text-2xl font-semibold text-gray-300">Hello, I'm</h3> */}
         <h1 className="text-5xl font-bold text-cyan-500 mb-2">Ansarul Islam</h1>
         <h2 className="text-3xl font-semibold text-cyan-200">
           Frontend Developer
@@ -68,7 +68,6 @@ const Hero = () => {
           src={riyad}
           alt="Ansarul Islam"
         />
-
       </div>
     </div>
   );

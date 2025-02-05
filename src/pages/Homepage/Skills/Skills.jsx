@@ -11,12 +11,13 @@ import {
   SiJavascript,
   SiExpress,
   SiMongodb,
+  SiNextdotjs,
 } from "react-icons/si";
 
 import html from "../../../assets/logos/html-5.svg";
 import css from "../../../assets/logos/css.svg";
 import firebase from "../../../assets/logos/firebase.svg";
-
+import Tilt from 'react-parallax-tilt';
 const Skills = () => {
   const skills = [
     {
@@ -36,6 +37,7 @@ const Skills = () => {
           icon: <SiJavascript className="text-yellow-500 text-4xl" />,
         },
         { name: "React", icon: <FaReact className="text-cyan-500 text-4xl" /> },
+        { name: "Next.js", icon: <SiNextdotjs className=" text-4xl" /> },
       ],
     },
     {
@@ -83,13 +85,12 @@ const Skills = () => {
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
               {skillCategory.items.map((skill, idx) => (
-                <div
-                  key={idx}
-                  className="bg-slate-800 p-4 rounded-lg shadow-md text-center hover:shadow-lg hover:scale-110 duration-300 transition-all flex flex-col justify-center items-center"
-                >
+                 <Tilt  key={idx} className="background-stripes parallax-effect bg-slate-800" perspective={500}>
+                
                   <div className="mb-4">{skill.icon}</div>
                   <p className="text-xl font-medium">{skill.name}</p>
-                </div>
+                
+                </Tilt>
               ))}
             </div>
           </div>

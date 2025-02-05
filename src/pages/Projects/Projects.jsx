@@ -30,7 +30,7 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project._id}
-            className="group relative flex flex-col bg-slate-800 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl"
+            className="group card relative flex flex-col bg-slate-800 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl"
           >
             <img
               src={project.image}

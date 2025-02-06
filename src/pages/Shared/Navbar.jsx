@@ -82,7 +82,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <a href={resume} download>
-          <button className="btn shiny-button text-gray-900 font-bold uppercase rounded-md hover:bg-cyan-600 border-none bg-cyan-500">Download Resume</button>
+          <button className="btn animate__animated animate__pulse animate__infinite	infinite animate__slower	3s  shiny-button text-gray-900 font-bold uppercase rounded-md hover:bg-cyan-600 border-none bg-cyan-500">Download Resume</button>
         </a>
       </div>
     </div>

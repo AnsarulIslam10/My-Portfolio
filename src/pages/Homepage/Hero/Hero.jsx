@@ -79,9 +79,10 @@ const Hero = () => {
         </a>
       </div>
 
-      <div className="relative animate__animated animate__zoomIn z-10 mt-6 md:mt-0">
+      <div className="relative animate__animated animate__zoomIn z-10 mt-6 md:mt-0 w-[380px] h-[380px] rounded-3xl">
+        <div className="absolute inset-0 rounded-full border-[8px] border-transparent bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500 animate-spin-slow"></div>
         <img
-          className="w-[380px]  rounded-3xl border-8 border-cyan-600 transform transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:border-cyan-300"
+          className="relative w-full h-full object-cover rounded-full p-2"
           src={riyad}
           alt="Ansarul Islam"
         />

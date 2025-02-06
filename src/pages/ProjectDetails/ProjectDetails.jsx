@@ -1,9 +1,15 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { FaArrowLeft, FaCalendar, FaGithub, FaLink } from "react-icons/fa";
+import {
+  FaArrowLeft,
+  FaCalendar,
+  FaExternalLinkAlt,
+  FaGithub,
+  FaLink,
+} from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
 import Loading from "../../components/Loading/Loading";
-
+import Tilt from 'react-parallax-tilt';
 const ProjectDetails = () => {
   const { id } = useParams();
   const [project, setProject] = useState(null);
@@ -23,7 +29,7 @@ const ProjectDetails = () => {
   };
 
   if (!project) {
-    return <Loading></Loading>
+    return <Loading></Loading>;
   }
 
   return (
@@ -47,13 +53,11 @@ const ProjectDetails = () => {
           className="w-full rounded-lg shadow-xl mb-6 object-cover h-64 sm:h-80 md:h-full"
         />
         <div className="mt-8 flex flex-col sm:flex-row justify-between items-center gap-4 mb-4">
-          <a
-            href={project.liveLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-cyan-400 btn mb-4 sm:mb-0"
-          >
-            <FaLink /> View Live
+          <a href={project.liveLink} target="_blank">
+            <button className="btn shiny-button bg-cyan-500 text-black hover:bg-cyan-600 border-none">
+              Live Site
+              <FaExternalLinkAlt />
+            </button>
           </a>
           <div className="flex gap-4">
             {project.githubServer ? (
@@ -62,7 +66,7 @@ const ProjectDetails = () => {
                   href={project.githubClient}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-cyan-400 btn btn-outline flex items-center gap-2"
+                  className="text-cyan-400 btn btn-outline flex items-center gap-2 shiny-button hover:bg-transparent hover:text-cyan-500 hover:border-cyan-500"
                 >
                   <FaGithub /> Client Repo
                 </a>
@@ -70,7 +74,7 @@ const ProjectDetails = () => {
                   href={project.githubServer}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-cyan-400 btn btn-outline flex items-center gap-2"
+                  className="text-cyan-400 btn btn-outline flex items-center gap-2 shiny-button hover:bg-transparent hover:text-cyan-500 hover:border-cyan-500"
                 >
                   <FaGithub /> Server Repo
                 </a>
@@ -80,7 +84,7 @@ const ProjectDetails = () => {
                 href={project.githubClient}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-cyan-400 btn btn-outline flex items-center"
+                className="text-cyan-400 btn btn-outline flex items-center shiny-button hover:bg-transparent hover:text-cyan-500 hover:border-cyan-500"
               >
                 <FaGithub /> GitHub Repo
               </a>
@@ -88,7 +92,9 @@ const ProjectDetails = () => {
           </div>
         </div>
 
-        <p className="text-lg text-gray-400 mb-6 text-justify">{project.description}</p>
+        <p className="text-lg text-gray-400 mb-6 text-justify">
+          {project.description}
+        </p>
       </div>
 
       <div className="mt-8">
@@ -97,13 +103,23 @@ const ProjectDetails = () => {
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
           {project.technologies.map((tech, index) => (
-            <div
+            <Tilt
               key={index}
-              className="text-center shadow-lg bg-cyan-900 p-4 flex flex-col items-center justify-center"
+              className="background-stripes parallax-effect bg-black/20"
+              perspective={500}
             >
-              <img src={tech.logo} alt={tech.name} className="w-12 h-12 mb-2" />
-              <p className="text-gray-300">{tech.name}</p>
-            </div>
+              <div
+                
+                className="text-center shadow-lg p-4 flex flex-col items-center justify-center"
+              >
+                <img
+                  src={tech.logo}
+                  alt={tech.name}
+                  className="w-12 h-12 mb-2"
+                />
+                <p className="text-gray-300 text-xl">{tech.name}</p>
+              </div>
+            </Tilt>
           ))}
         </div>
       </div>
@@ -130,7 +146,9 @@ const ProjectDetails = () => {
         <h2 className="text-2xl font-semibold mb-4 text-cyan-500">
           Future Improvements
         </h2>
-        <p className="text-gray-400 text-justify">{project.futureImprovement}</p>
+        <p className="text-gray-400 text-justify">
+          {project.futureImprovement}
+        </p>
       </div>
 
       <div className="mt-8">

@@ -3,9 +3,24 @@ import riyadpfp from "../../../assets/ansarul.png";
 import riyad from "../../../assets/2.jpg";
 import resume from "../../../assets/Resume_of_Ansarul_Islam.pdf";
 import back from "../../../assets/back.jpg";
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaCode,
+  FaFacebook,
+  FaGithub,
+  FaLaptopCode,
+  FaLinkedin,
+} from "react-icons/fa";
+import { useTypewriter } from "react-simple-typewriter";
 
 const Hero = () => {
+  const [text1] = useTypewriter({
+    words: [
+      "Frontend Developer",
+      "React & JavaScript Enthusiast",
+      "Aspiring MERN Stact Developer",
+    ],
+    loop: true,
+  });
   return (
     <div
       className="relative flex flex-col-reverse md:flex-row items-center justify-center md:justify-around gap-4 text-white py-20 px-6"
@@ -22,8 +37,9 @@ const Hero = () => {
       <div className="relative z-10 text-center md:text-start">
         {/* <h3 className="text-2xl font-semibold text-gray-300">Hello, I'm</h3> */}
         <h1 className="text-5xl font-bold text-cyan-500 mb-2">Ansarul Islam</h1>
-        <h2 className="text-3xl font-semibold text-cyan-200">
-          Frontend Developer
+        <h2 className="text-xl sm:text-2xl md:text-3xl flex items-center gap-1 font-semibold text-cyan-200">
+          <FaCode />‎ 
+          {text1}
         </h2>
         <p className="max-w-lg mt-4 text-gray-400 text-lg">
           Passionate about creating interactive and user-friendly web
@@ -56,7 +72,7 @@ const Hero = () => {
         </div>
 
         <a href={resume} download>
-          <button className="btn btn-outline border-cyan-500 text-cyan-500 hover:text-cyan-600 font-bold uppercase rounded-md hover:bg-transparent mt-6">
+          <button className="shiny-button btn btn-outline border-cyan-500 text-cyan-500 hover:text-cyan-600 font-bold uppercase rounded-md hover:bg-transparent mt-6">
             Download Resume
           </button>
         </a>

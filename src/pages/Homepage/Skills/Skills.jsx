@@ -85,7 +85,7 @@ const Skills = () => {
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
               {skillCategory.items.map((skill, idx) => (
-                 <Tilt  key={idx} className="background-stripes parallax-effect bg-slate-800" perspective={500}>
+                 <Tilt  key={idx} className="background-stripes parallax-effect bg-black/20" perspective={500}>
                 
                   <div className="mb-4">{skill.icon}</div>
                   <p className="text-xl font-medium">{skill.name}</p>

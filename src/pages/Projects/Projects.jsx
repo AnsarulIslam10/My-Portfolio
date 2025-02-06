@@ -30,13 +30,15 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project._id}
-            className="group card relative flex flex-col bg-slate-800 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl"
+            className="group card relative flex flex-col bg-black/20 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl"
           >
-            <img
-              src={project.image}
-              alt={project.name}
-              className="w-full px-6 pt-6 h-64 object-cover"
-            />
+            <div className="px-6 pt-6">
+              <img
+                src={project.image}
+                alt={project.name}
+                className="w-full rounded-md h-64 object-cover"
+              />
+            </div>
             <div className="p-6 flex-1">
               <h3 className="text-3xl mb-2 font-semibold text-cyan-500">
                 {project.name}
@@ -47,14 +49,14 @@ const Projects = () => {
             </div>
             <div className="px-6 pb-6 flex justify-between">
               <a href={project.liveLink} target="_blank">
-                <button className="btn bg-cyan-500 text-black hover:bg-cyan-600 border-none">
+                <button className="btn shiny-button bg-cyan-500 text-black hover:bg-cyan-600 border-none">
                   Live Site
                   <FaExternalLinkAlt />
                 </button>
               </a>
               <Link
                 to={`/projects/${project._id}`}
-                className="btn btn-outline border-cyan-500 hover:bg-cyan-500 text-cyan-500"
+                className="btn btn-outline shiny-button border-cyan-500 hover:bg-transparent hover:text-cyan-500 hover:border-cyan-500 text-cyan-500"
               >
                 View Details
               </Link>

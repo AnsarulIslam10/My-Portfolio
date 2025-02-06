@@ -92,7 +92,7 @@ const ProjectDetails = () => {
           </div>
         </div>
 
-        <p className="text-lg text-gray-400 mb-6 text-justify">
+        <p className="text-lg text-gray-300 mb-6 text-justify">
           {project.description}
         </p>
       </div>
@@ -124,29 +124,29 @@ const ProjectDetails = () => {
         </div>
       </div>
 
-      <div className="mt-8">
-        <h2 className="text-2xl font-semibold mb-4 text-cyan-500">Features</h2>
-        <ul className="list-disc pl-6 text-gray-400">
-          {Object.entries(project.features).map(([key, value], index) => (
-            <li key={index} className="mb-2">
-              <strong>{key}:</strong> {value}
-            </li>
-          ))}
-        </ul>
-      </div>
+      <div className="mb-8 mt-4">
+          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">Key Features</h2>
+          <ul className="list-disc pl-6 text-gray-300">
+            {Object.entries(project.features).map(([key, value], index) => (
+              <li key={index} className="mb-2">
+                <strong>{key}:</strong> {value}
+              </li>
+            ))}
+          </ul>
+        </div>
 
       <div className="mt-8">
         <h2 className="text-2xl font-semibold mb-4 text-cyan-500">
           Challenges Faced
         </h2>
-        <p className="text-gray-400 text-justify">{project.challenges}</p>
+        <p className="text-gray-300 text-justify">{project.challenges}</p>
       </div>
 
       <div className="mt-8">
         <h2 className="text-2xl font-semibold mb-4 text-cyan-500">
           Future Improvements
         </h2>
-        <p className="text-gray-400 text-justify">
+        <p className="text-gray-300 text-justify">
           {project.futureImprovement}
         </p>
       </div>
@@ -155,7 +155,7 @@ const ProjectDetails = () => {
         <h2 className="text-2xl font-semibold mb-4 text-cyan-500">
           Creation Date
         </h2>
-        <p className="text-gray-400 flex items-center gap-2">
+        <p className="text-gray-300 flex items-center gap-2">
           <FaCalendar className="text-cyan-500" /> {project.creationDate}
         </p>
       </div>

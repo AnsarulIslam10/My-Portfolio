@@ -49,7 +49,7 @@ const Skills = () => {
         },
         {
           name: "Express.js",
-          icon: <SiExpress className="text-gray-500 text-4xl" />,
+          icon: <SiExpress className="text-gray-100 text-4xl" />,
         },
       ],
     },

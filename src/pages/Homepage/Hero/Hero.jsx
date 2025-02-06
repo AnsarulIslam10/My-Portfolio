@@ -17,13 +17,14 @@ const Hero = () => {
     words: [
       "Frontend Developer",
       "React & JavaScript Enthusiast",
-      "Aspiring MERN Stact Developer",
+      "Aspiring MERN Stack Developer",
     ],
     loop: true,
   });
+
   return (
     <div
-      className="relative flex flex-col-reverse md:flex-row items-center justify-center md:justify-around gap-4 text-white py-20 px-6"
+      className="relative flex flex-col-reverse md:flex-row items-center justify-center md:justify-between gap-8 text-white py-20 px-6"
       style={{
         backgroundImage: `url(${back})`,
         backgroundRepeat: "no-repeat",
@@ -32,22 +33,22 @@ const Hero = () => {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="absolute inset-0 bg-black opacity-60"></div>
 
-      <div className="relative z-10 text-center md:text-start">
-        {/* <h3 className="text-2xl font-semibold text-gray-300">Hello, I'm</h3> */}
-        <h1 className="text-5xl font-bold text-cyan-500 mb-2">Ansarul Islam</h1>
-        <h2 className="text-xl sm:text-2xl md:text-3xl flex items-center gap-1 font-semibold text-cyan-200">
-          <FaCode />‎ 
-          {text1}
+      <div className="relative z-10 text-center md:text-left md:max-w-xl">
+        <h1 className="text-5xl font-extrabold text-cyan-500 mb-4">
+          Ansarul Islam
+        </h1>
+        <h2 className="text-xl sm:text-2xl md:text-3xl flex items-center gap-1 font-semibold text-cyan-200 mb-4">
+          <FaCode />‎ {text1}
         </h2>
-        <p className="max-w-lg mt-4 text-gray-400 text-lg">
+        <p className="max-w-lg mt-4 text-gray-300 text-lg">
           Passionate about creating interactive and user-friendly web
           experiences. Let's collaborate and turn ideas into reality!
         </p>
 
         <h3 className="uppercase mt-6 mb-4 text-gray-300">Connect with me</h3>
-        <div className="flex text-4xl text-cyan-500 gap-6 mb-6">
+        <div className="flex justify-center md:justify-start text-4xl text-cyan-500 gap-6 mb-6">
           <a
             href="https://www.facebook.com/ansarulislamriyad"
             target="_blank"
@@ -80,7 +81,7 @@ const Hero = () => {
 
       <div className="relative z-10 mt-6 md:mt-0">
         <img
-          className="w-[380px] rounded-full border-8 border-cyan-600 transform transition duration-300 hover:scale-105"
+          className="w-[380px] rounded-3xl border-8 border-cyan-600 transform transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:border-cyan-300"
           src={riyad}
           alt="Ansarul Islam"
         />

@@ -80,7 +80,7 @@ const Hero = () => {
       </div>
 
       <div className="relative animate__animated animate__zoomIn z-10 mt-6 md:mt-0 w-[380px] h-[380px] rounded-3xl">
-        <div className="absolute inset-0 rounded-full border-[8px] border-transparent bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500 animate-spin-slow"></div>
+        <div className="absolute inset-0 rounded-full border-[8px] border-transparent bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500 "></div>
         <img
           className="relative w-full h-full object-cover rounded-full p-2"
           src={riyad}

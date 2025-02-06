@@ -4,8 +4,11 @@ import Lottie from "lottie-react";
 
 const About = () => {
   return (
-    <div id="about" className=" px-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center my-24">
+    <div id="about" className="px-6 my-24">
+      <h1 className="text-5xl mb-8 text-cyan-500 font-bold text-center">
+        About Me
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center ">
         <div className="flex justify-center md:justify-start">
           <div className="hover:scale-110 transform transition duration-300">
             <Lottie animationData={computerAnimation} />
@@ -13,21 +16,22 @@ const About = () => {
         </div>
 
         <div className="text-white space-y-6">
-          <h1 className="text-5xl text-cyan-500 font-bold mb-4 text-center md:text-left">
-            About Me
-          </h1>
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-            I’m Ansarul Islam, a frontend developer who began programming in
-            2020 during the COVID lockdown. At first, I learned the basics of
-            HTML, CSS, and Bootstrap, but I struggled with consistency and
-            lacked proper guidance. Despite these challenges, my passion for
-            programming pushed me to join the{" "}
-            <span className="italic text-purple-400">
-              Programming Hero web development course
-            </span>
-            . Alhamdulillah, my progress has been remarkable, and I've gained
-            many valuable skills. I’m excited about the journey ahead and the
-            opportunities to continue learning and growing.
+          <p className="text-lg md:text-xl text-gray-300 leading-relaxed text-">
+            Hi, I’m <strong>Ansarul Islam</strong>, a Frontend Web Developer. I
+            have a Diploma in <em>Computer Technology</em> and I'm passionate
+            about building dynamic and interactive web applications. I initially
+            learned HTML, CSS, and Bootstrap on my own but lacked proper
+            guidance. My real progress began when I joined the{" "}
+            <span className="italic text-purple-400">Programming Hero's</span>{" "}
+            web development course, which helped me refine my skills in
+            JavaScript, React, and front-end development. I enjoy
+            problem-solving, optimizing website performance, and creating
+            user-friendly applications. Some of my projects include a Medical
+            Camp website, a Volunteer Management system, and a Game Review Site.
+            I love turning ideas into reality with clean and efficient code.
+            Beyond coding, I’m into gaming, and reading comics. I believe in
+            writing clean code, keeping things efficient, and always learning.
+            Let’s connect and build something awesome!
           </p>
         </div>
       </div>

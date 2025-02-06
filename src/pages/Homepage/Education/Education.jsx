@@ -11,7 +11,7 @@ const Education = () => {
       </h2>
       {/* Container with overlay */}
       <div
-        className="flex items-center justify-around bg-slate-800 p-8 rounded-lg shadow-md relative"
+        className="flex flex-col md:flex-row items-center justify-around bg-slate-800 p-8 rounded-lg shadow-md relative overflow-hidden"
         style={{
           backgroundImage: `url(${cnpi})`,
           backgroundRepeat: "no-repeat",
@@ -20,23 +20,44 @@ const Education = () => {
         }}
       >
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black opacity-85 rounded-lg"></div>
+        <div className="absolute inset-0 bg-black opacity-80 rounded-lg"></div>
 
-        <div className="relative z-10">
+        {/* Education Details */}
+        <div className="relative z-10 w-full  mb-8 md:mb-0">
           <h3 className="text-4xl font-semibold mb-6 text-cyan-500">
-            Diploma in Computer Technology
+            Diploma in Engineering
           </h3>
-          <p className="text-xl text-cyan-200 mb-1">Chapainawabganj Polytechnic Institute</p>
-          <p className="text-lg text-cyan-200">
-            Status: Completed
+          <p className="text-xl text-cyan-200 mb-2">
+            Institution: Chapainabganj Polytechnic Institute
           </p>
-          <p className="text-lg text-cyan-200">
-            Duration: 2020 - 2025
+          <p className="text-xl text-cyan-200 mb-2">
+            Department: Computer Technology
           </p>
+          <p className="text-lg text-cyan-200 mb-2">Status: Complete</p>
+          <p className="text-lg text-cyan-200 mb-4">Duration: 4 Years</p>
         </div>
-        <div className="relative hidden sm:block z-10">
-          <Lottie className="w-44 md:w-64" animationData={educationAnimation} />
+
+        {/* Relevant Coursework */}
+        <div className="relative z-10 w-full md:w-1/2">
+          <h4 className="text-2xl font-semibold text-cyan-500 mb-4">
+            Relevant Coursework:
+          </h4>
+          <ul className="list-disc list-inside text-lg text-cyan-200 space-y-2">
+            <li className="">
+              Data Structures and Algorithms
+            </li>
+            <li className="">
+              Web Development
+            </li>
+            <li className="">
+              Database Management Systems
+            </li>
+            <li className="">
+              Networking
+            </li>
+          </ul>
         </div>
+
       </div>
     </section>
   );

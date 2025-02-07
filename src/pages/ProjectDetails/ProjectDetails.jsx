@@ -38,7 +38,7 @@ const ProjectDetails = () => {
         <div className="flex justify-between items-center mb-4">
           <Link
             to="/"
-            className="btn btn-sm btn-outline border-cyan-500 text-cyan-500 hover:bg-transparent hover:text-cyan-600 hover:border-cyan-600 rounded-md flex items-center gap-2"
+            className="btn btn-sm btn-outline border-cyan-500 text-cyan-500 hover:bg-transparent hover:text-cyan-600 hover:border-cyan-600 rounded-md flex items-center gap-2 shiny-button"
           >
             <FaArrowLeft /> Go Back
           </Link>

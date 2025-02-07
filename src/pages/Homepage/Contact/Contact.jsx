@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import Swal from "sweetalert2";
 const Contact = () => {
   const form = useRef();
@@ -22,12 +22,12 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
-          form.current.reset()
+          form.current.reset();
           Swal.fire({
             icon: "success",
             title: "Email sent successfully",
             showConfirmButton: false,
-            timer: 1500
+            timer: 1500,
           });
         },
         (error) => {
@@ -98,27 +98,33 @@ const Contact = () => {
 
         {/* Contact Info */}
         <div className="text-cyan-500 bg-transparent md:w-1/2 md:pl-8">
-          <h3 className="text-3xl font-semibold mb-12 text-cyan-300">Contact Info</h3>
+          <h3 className="text-3xl font-semibold mb-12 text-cyan-300">
+            Contact Info
+          </h3>
           <div className="mb-4">
-            <p className="text-xs sm:text-lg md:text-xl flex items-center gap-2 "><FaLocationDot className="text-xl sm:text-2xl md:text-3xl"/> Rajshahi, Bangladesh</p>
+            <p className="text-xs sm:text-lg md:text-xl flex items-center gap-2 ">
+              <FaLocationDot className="text-xl sm:text-2xl md:text-3xl" />{" "}
+              Rajshahi, Bangladesh
+            </p>
           </div>
           <div className="mb-4">
             <p className="text-xs sm:text-lg md:text-xl flex items-center gap-2">
-              <MdEmail className="text-xl sm:text-2xl md:text-3xl"/>{" "}
-              <a className="">
-                ansarulislam01739@gmail.com
+              <MdEmail className="text-xl sm:text-2xl md:text-3xl" />{" "}
+              <a className="">ansarulislam01739@gmail.com</a>
+            </p>
+          </div>
+          <div>
+            <p className="text-xs sm:text-lg md:text-xl mb-3 flex items-center gap-2">
+              <FaPhoneAlt className="text-xl sm:text-2xl" />
+              <a rel="noopener noreferrer" className="">
+                +880 1739-702012
               </a>
             </p>
           </div>
           <div>
             <p className="text-xs sm:text-lg md:text-xl flex items-center gap-2">
-              <FaWhatsapp className="text-xl sm:text-2xl md:text-3xl"/>
-              <a
-                href="https://www.whatsapp.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className=""
-              >
+              <FaWhatsapp className="text-xl sm:text-2xl md:text-3xl" />
+              <a rel="noopener noreferrer" className="">
                 +880 1739-702012
               </a>
             </p>

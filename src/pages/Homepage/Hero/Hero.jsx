@@ -1,16 +1,14 @@
 import React from "react";
-import riyadpfp from "../../../assets/ansarul.png";
-import riyad from "../../../assets/2.jpg";
-import resume from "../../../assets/Resume_of_Ansarul_Islam.pdf";
-import back from "../../../assets/back.jpg";
 import {
   FaCode,
   FaFacebook,
   FaGithub,
-  FaLaptopCode,
-  FaLinkedin,
+  FaLinkedin
 } from "react-icons/fa";
 import { useTypewriter } from "react-simple-typewriter";
+import riyad from "../../../assets/2.jpg";
+import resume from "../../../assets/Resume_of_Ansarul_Islam.pdf";
+import back from "../../../assets/back.jpg";
 
 const Hero = () => {
   const [text1] = useTypewriter({
@@ -36,10 +34,11 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black opacity-60"></div>
 
       <div className="relative z-10 text-center md:text-left md:max-w-xl">
+        <h2 className="text-xl font-bold text-cyan-500">Hello, I'm</h2>
         <h1 className="text-5xl font-extrabold text-cyan-500 mb-4">
           Ansarul Islam
         </h1>
-        <h2 className="text-xl sm:text-2xl md:text-3xl flex items-center gap-1 font-semibold text-cyan-200 mb-4">
+        <h2 className="text-lg sm:text-xl md:text-2xl flex items-center gap-1 font-semibold text-cyan-200 mb-4">
           <FaCode />‎ {text1}
         </h2>
         <p className="max-w-lg mt-4 text-gray-300 text-lg">
@@ -79,10 +78,10 @@ const Hero = () => {
         </a>
       </div>
 
-      <div className="relative animate__animated animate__zoomIn z-10 mt-6 md:mt-0 w-[380px] h-[380px] rounded-3xl">
-        <div className="absolute inset-0 rounded-full border-[8px] border-transparent bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500 "></div>
+      <div className="relative animate__animated animate__zoomIn z-10 mt-6 md:mt-0 sm:w-[380px] sm:h-[380px] rounded-3xl">
+        {/* <div className="absolute inset-0 rounded-3xl  "></div> */}
         <img
-          className="relative w-full h-full object-cover rounded-full p-2"
+          className="relative border-[4px] border-transparent bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500 w-52 sm:w-full h-full object-cover rounded-3xl"
           src={riyad}
           alt="Ansarul Islam"
         />

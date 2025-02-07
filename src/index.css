@@ -85,3 +85,21 @@
 .animate-spin-slow {
   animation: spin-slow 2s linear infinite;
 }
+
+
+@keyframes gradientLoop {
+  0% {
+    background-position: top left;
+  }
+  50% {
+    background-position: bottom right;
+  }
+  100% {
+    background-position: top left;
+  }
+}
+
+.bg-gradient-animate {
+  background-size: 200% 200%;
+  animation: gradientLoop 15s ease infinite;
+}

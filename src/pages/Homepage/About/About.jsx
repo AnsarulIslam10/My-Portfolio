@@ -17,21 +17,7 @@ const About = () => {
 
         <div className="text-white space-y-6">
           <p className="text-lg md:text-xl text-center lg:text-start text-gray-300 leading-relaxed text-">
-            Hi, I’m <strong>Ansarul Islam</strong>, a Frontend Web Developer. I
-            have a Diploma in <em>Computer Technology</em> and I'm passionate
-            about building dynamic and interactive web applications. I initially
-            learned HTML, CSS, and Bootstrap on my own but lacked proper
-            guidance. My real progress began when I joined the{" "}
-            <span className="italic text-purple-400">Programming Hero's</span>{" "}
-            web development course, which helped me refine my skills in
-            JavaScript, React, and front-end development. I enjoy
-            problem-solving, optimizing website performance, and creating
-            user-friendly applications. Some of my projects include a Medical
-            Camp website, a Volunteer Management system, and a Game Review Site.
-            I love turning ideas into reality with clean and efficient code.
-            Beyond coding, I’m into gaming, and reading comics. I believe in
-            writing clean code, keeping things efficient, and always learning.
-            Let’s connect and build something awesome!
+            Hi, I'm <strong>Ansarul Islam</strong>, an aspiring Developer currently pursuing a BSc in Computer Science and Engineering at Northern University Bangladesh. I’m dedicated to crafting intuitive, responsive, and visually engaging web applications. I specialize in translating designs into seamless user interfaces while solving complex UI challenges with clean and efficient code. I'm quick to adapt to new technologies and evolving project needs, always aiming to enhance user experience and drive real engagement through thoughtful development.
           </p>
         </div>
       </div>

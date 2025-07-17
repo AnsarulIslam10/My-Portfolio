@@ -17,7 +17,7 @@ const About = () => {
 
         <div className="text-white space-y-6">
           <p className="text-lg md:text-xl text-center lg:text-start text-gray-300 leading-relaxed text-">
-            Hi, I'm <strong>Ansarul Islam</strong>, an aspiring Developer currently pursuing a BSc in Computer Science and Engineering at Northern University Bangladesh. I’m dedicated to crafting intuitive, responsive, and visually engaging web applications. I specialize in translating designs into seamless user interfaces while solving complex UI challenges with clean and efficient code. I'm quick to adapt to new technologies and evolving project needs, always aiming to enhance user experience and drive real engagement through thoughtful development.
+            I'm <strong>Ansarul Islam</strong>, an aspiring Developer currently pursuing a BSc in Computer Science and Engineering at Northern University Bangladesh. I’m dedicated to crafting intuitive, responsive, and visually engaging web applications. I specialize in translating designs into seamless user interfaces while solving complex UI challenges with clean and efficient code. I'm quick to adapt to new technologies and evolving project needs, always aiming to enhance user experience and drive real engagement through thoughtful development.
           </p>
         </div>
       </div>

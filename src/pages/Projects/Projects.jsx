@@ -13,7 +13,16 @@ const Projects = () => {
         const { data } = await axios.get(
           "https://portfolio-server-sooty-eta.vercel.app/projects"
         );
-        setProjects(data);
+
+        // sort featured first, then priority, then creationDate
+        const sortedProjects = data.sort((a, b) => {
+          if (a.featured && !b.featured) return -1;
+          if (!a.featured && b.featured) return 1;
+          if (a.priority && b.priority) return b.priority - a.priority;
+          return new Date(b.creationDate) - new Date(a.creationDate);
+        });
+
+        setProjects(sortedProjects);
       } catch (error) {
         console.error("Error fetching projects:", error);
       }
@@ -30,10 +39,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
           <Fade key={project._id}>
-            <div
-              
-              className="group card h-[100%] relative flex flex-col bg-black/20 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl"
-            >
+            <div className="group card h-[100%] relative flex flex-col bg-black/20 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
               <div className="px-6 pt-6">
                 <img
                   src={project.image}

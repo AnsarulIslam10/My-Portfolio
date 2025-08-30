@@ -119,5 +119,48 @@
     },
     "futureImprovement": "I plan to add a backend to make the site dynamic, allowing for real-time updates and user interactions. Enhancing the UI for a more polished and intuitive design is also on the agenda, ensuring a seamless user experience. These improvements will make the site more engaging and functional.",
     "creationDate": "21/11/2024"
+  },
+  {
+    "name": "SecurePay - Digital Wallet System Frontend",
+    "description": "SecurePay is a modern, responsive digital wallet application built with React, TypeScript, and Tailwind CSS that allows users to send, receive, and manage money securely. It supports role-based access for Users, Agents, and Admins with a clean UI, dark/light mode, and seamless navigation.",
+    "image": "https://i.ibb.co/xSJq89wM/Secure-Pay.png",
+    "technologies": [
+      {
+        "name": "React",
+        "logo": "https://i.ibb.co.com/y0PcKNW/icons8-react-480.png"
+      },
+      {
+        "name": "TypeScript",
+        "logo": "https://i.ibb.co/LD0vtKxS/icons8-typescript-480-1.png"
+      },
+      {
+        "name": "Tailwind CSS",
+        "logo": "https://i.ibb.co.com/vxfDG1G/icons8-tailwind-css-480.png"
+      },
+      {
+        "name": "Shadcn",
+        "logo": "https://i.ibb.co/67B9vrsR/shadcn-ui-logo-png-seeklogo-519786.webp"
+      },
+      {
+        "name": "Redux Toolkit + RTK Query",
+        "logo": "https://i.ibb.co/Wpz7tVJK/icons8-redux-500-1.png"
+      }
+    ],
+    "liveLink": "https://digital-wallet-system-frontend-mu.vercel.app",
+    "githubClient": "https://github.com/AnsarulIslam10/digital-wallet-system-frontend",
+    "githubServer": "https://github.com/AnsarulIslam10/digital-wallet-system-backend",
+    "challenges": "The most challenging part was implementing secure role-based access (User, Agent, Admin) along with persistent authentication using JWT tokens. Managing UI state across different dashboards and integrating features like agent approval, transaction monitoring, and theming required careful planning and modular design.",
+    "features": {
+      "Authentication": "Secure login and registration with JWT-based sessions.",
+      "Role-based Dashboards": "Separate dashboards for Users, Agents, and Admins with specific features.",
+      "User Functions": "Money transfer, add/withdraw funds, wallet balance tracking, and transaction history.",
+      "Agent Functions": "Cash-in and cash-out operations with commission earnings.",
+      "Admin Functions": "Manage users, approve/suspend agents, monitor transactions, and view analytics.",
+      "UI/UX": "Responsive design, dark/light mode toggle, interactive sidebar, and toast notifications.",
+      "Validation": "Form validation using React Hook Form + Zod with helpful error messages.",
+      "Analytics": "Charts and statistics for transaction monitoring using Recharts."
+    },
+    "futureImprovement": "I plan to integrate real-time notifications using WebSockets, enhance transaction analytics with advanced charting, and add a PWA (Progressive Web App) version for better mobile usability. Another goal is to implement two-factor authentication for enhanced security.",
+    "creationDate": "25/08/2025"
   }
 ]

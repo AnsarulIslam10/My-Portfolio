@@ -1,8 +1,6 @@
-import React from "react";
-import educationAnimation from "../../../assets/education.json";
-import cnpi from "../../../assets/cnpi.jpeg";
-import nub from "../../../assets/NUB.png";
 import Lottie from "lottie-react";
+import educationAnimation from "../../../assets/education.json";
+import nub from "../../../assets/NUB.png";
 
 const Education = () => {
   return (

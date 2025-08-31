@@ -8,55 +8,57 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
+  const [activeItem, setActiveItem] = useState("");
 
-  const sections = [
-    { name: "About Me", id: "about" },
-    { name: "Skills", id: "skills" },
-    { name: "Education", id: "education" },
-    { name: "Projects", id: "projects" },
-    { name: "Contact", id: "contact" },
+  const navItems = [
+    { name: "About Me", id: "about", type: "section" },
+    { name: "Skills", id: "skills", type: "section" },
+    { name: "Education", id: "education", type: "section" },
+    { name: "Projects", id: "projects", type: "section" },
+    { name: "Contact", id: "contact", type: "section" },
+    { name: "Blog", id: "/blog", type: "page" },
   ];
 
   useEffect(() => {
     if (location.pathname === "/") {
       const handleScroll = () => {
         const scrollPos = window.scrollY + window.innerHeight / 2;
-        let currentSection = sections[0].id;
-        sections.forEach((sec) => {
-          const el = document.getElementById(sec.id);
-          if (el && scrollPos >= el.offsetTop) {
-            currentSection = sec.id;
+        let currentSection = navItems[0].id;
+        navItems.forEach((item) => {
+          if (item.type === "section") {
+            const el = document.getElementById(item.id);
+            if (el && scrollPos >= el.offsetTop) {
+              currentSection = item.id;
+            }
           }
         });
-        setActiveSection(currentSection);
+        setActiveItem(currentSection);
       };
-
       window.addEventListener("scroll", handleScroll);
-      handleScroll(); // run once to set initial active section
+      handleScroll();
       return () => window.removeEventListener("scroll", handleScroll);
     } else {
-      setActiveSection("");
+      const pageItem = navItems.find(
+        (item) => item.type === "page" && location.pathname === item.id
+      );
+      setActiveItem(pageItem ? pageItem.id : "");
     }
   }, [location.pathname]);
 
-  const handleNavClick = (sectionId) => {
-    if (location.pathname === "/") {
-      scroller.scrollTo(sectionId, {
-        smooth: true,
-        duration: 500,
-        offset: -80,
-      });
-    } else {
-      navigate("/", { replace: false });
-      setTimeout(() => {
-        scroller.scrollTo(sectionId, {
-          smooth: true,
-          duration: 500,
-          offset: -80,
-        });
-      }, 100);
+  const handleNavClick = (item) => {
+    if (item.type === "section") {
+      if (location.pathname === "/") {
+        scroller.scrollTo(item.id, { smooth: true, duration: 500, offset: -80 });
+      } else {
+        navigate("/", { replace: false });
+        setTimeout(() => {
+          scroller.scrollTo(item.id, { smooth: true, duration: 500, offset: -80 });
+        }, 100);
+      }
+    } else if (item.type === "page") {
+      navigate(item.id);
     }
+
     if (menuOpen) setMenuOpen(false);
   };
 
@@ -76,17 +78,17 @@ const Navbar = () => {
           </div>
           {menuOpen && (
             <ul className="menu menu-sm dropdown-content bg-base-100 z-[1] mt-3 w-40 p-2 shadow text-lg space-y-2 absolute left-0">
-              {sections.map((sec) => (
+              {navItems.map((item) => (
                 <li
-                  key={sec.id}
-                  onClick={() => handleNavClick(sec.id)}
+                  key={item.id}
+                  onClick={() => handleNavClick(item)}
                   className={`cursor-pointer px-2 py-1 rounded-md transition duration-200 ${
-                    activeSection === sec.id
+                    activeItem === item.id
                       ? "bg-cyan-500 text-black font-bold"
                       : "text-white hover:text-cyan-500"
                   }`}
                 >
-                  {sec.name}
+                  {item.name}
                 </li>
               ))}
             </ul>
@@ -102,17 +104,17 @@ const Navbar = () => {
       {/* Navbar Center - Desktop */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          {sections.map((sec) => (
+          {navItems.map((item) => (
             <li
-              key={sec.id}
-              onClick={() => handleNavClick(sec.id)}
+              key={item.id}
+              onClick={() => handleNavClick(item)}
               className={`cursor-pointer px-3 py-1 rounded-md transition duration-200 ${
-                activeSection === sec.id
+                activeItem === item.id
                   ? "border-b rounded-none border-cyan-500 text-white font-bold"
                   : "text-white hover:text-cyan-500"
               }`}
             >
-              {sec.name}
+              {item.name}
             </li>
           ))}
         </ul>

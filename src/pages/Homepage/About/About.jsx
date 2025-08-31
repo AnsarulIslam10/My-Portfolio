@@ -1,6 +1,5 @@
-import React from "react";
-import computerAnimation from "../../../assets/computer.json";
 import Lottie from "lottie-react";
+import computerAnimation from "../../../assets/computer.json";
 
 const About = () => {
   return (

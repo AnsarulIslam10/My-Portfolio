@@ -105,7 +105,7 @@ const Navbar = () => {
 
         {/* Logo / Name */}
         <Link to={"/"}>
-          <span className="text-xl font-bold text-cyan-500 tracking-wide">
+          <span className="text-3xl font-bold text-cyan-500 tracking-wide">
             <span className="text-primary">{"<"}</span>Ansarul{" "}
             <span className="text-primary">{"/>"}</span>
           </span>

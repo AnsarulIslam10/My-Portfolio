@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <section id="contact" className="my-16">
       <h2 className="text-5xl font-bold text-center mb-12 text-cyan-500">
-        Contact Information
+        Contact Me
       </h2>
       <div className="bg-black/20 p-8 rounded-lg shadow-lg space-y-8 md:space-y-0 md:flex md:justify-between md:items-start">
         {/* Contact Form */}
@@ -104,21 +104,13 @@ const Contact = () => {
           <div className="mb-4">
             <p className="text-xs sm:text-lg md:text-xl flex items-center gap-2 ">
               <FaLocationDot className="text-xl sm:text-2xl md:text-3xl" />{" "}
-              Rajshahi, Bangladesh
+              Dhaka, Bangladesh
             </p>
           </div>
           <div className="mb-4">
             <p className="text-xs sm:text-lg md:text-xl flex items-center gap-2">
               <MdEmail className="text-xl sm:text-2xl md:text-3xl" />{" "}
               <a className="">ansarulislam01739@gmail.com</a>
-            </p>
-          </div>
-          <div>
-            <p className="text-xs sm:text-lg md:text-xl mb-3 flex items-center gap-2">
-              <FaPhoneAlt className="text-xl sm:text-2xl" />
-              <a rel="noopener noreferrer" className="">
-                +880 1739-702012
-              </a>
             </p>
           </div>
           <div>

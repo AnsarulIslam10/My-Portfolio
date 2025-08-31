@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const Projects = () => {
+const AllProjects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const Projects = () => {
         My Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.slice(0, 6).map((project) => (
+        {projects.map((project) => (
           <Fade key={project._id}>
             <div className="group card h-[100%] relative flex flex-col bg-black/20 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
               <div className="px-6 pt-6">
@@ -73,19 +73,8 @@ const Projects = () => {
           </Fade>
         ))}
       </div>
-
-      {/* View All Projects Button */}
-      {projects.length > 6 && (
-        <div className="text-center mt-12">
-          <Link to="/all-projects">
-            <button className="btn shiny-button bg-cyan-500 text-black hover:bg-cyan-600 border-none">
-              View All Projects
-            </button>
-          </Link>
-        </div>
-      )}
     </section>
   );
 };
 
-export default Projects;
+export default AllProjects;

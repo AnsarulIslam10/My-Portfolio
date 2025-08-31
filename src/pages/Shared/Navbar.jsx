@@ -1,6 +1,6 @@
 import { FaBars } from "react-icons/fa";
 import resume from "../../assets/Resume_of_Ansarul_Islam.pdf";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { scroller } from "react-scroll";
 import { useState, useEffect } from "react";
 
@@ -48,11 +48,19 @@ const Navbar = () => {
   const handleNavClick = (item) => {
     if (item.type === "section") {
       if (location.pathname === "/") {
-        scroller.scrollTo(item.id, { smooth: true, duration: 500, offset: -80 });
+        scroller.scrollTo(item.id, {
+          smooth: true,
+          duration: 500,
+          offset: -80,
+        });
       } else {
         navigate("/", { replace: false });
         setTimeout(() => {
-          scroller.scrollTo(item.id, { smooth: true, duration: 500, offset: -80 });
+          scroller.scrollTo(item.id, {
+            smooth: true,
+            duration: 500,
+            offset: -80,
+          });
         }, 100);
       }
     } else if (item.type === "page") {
@@ -96,9 +104,12 @@ const Navbar = () => {
         </div>
 
         {/* Logo / Name */}
-        <a className="text-cyan-500 font-bold text-lg md:text-3xl uppercase">
-          Ansarul Islam
-        </a>
+        <Link to={"/"}>
+          <span className="text-xl font-bold text-cyan-500 tracking-wide">
+            <span className="text-primary">{"<"}</span>Ansarul{" "}
+            <span className="text-primary">{"/>"}</span>
+          </span>
+        </Link>
       </div>
 
       {/* Navbar Center - Desktop */}

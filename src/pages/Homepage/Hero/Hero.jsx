@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  FaCode,
-  FaFacebook,
-  FaGithub,
-  FaLinkedin
-} from "react-icons/fa";
+import { FaCode, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { useTypewriter } from "react-simple-typewriter";
 import riyad from "../../../assets/2.jpg";
 import resume from "../../../assets/Resume_of_Ansarul_Islam.pdf";
@@ -63,7 +58,7 @@ const Hero = () => {
             <FaGithub className="cursor-pointer hover:scale-125 transition-all duration-200" />
           </a>
           <a
-            href="https://www.linkedin.com/in/ansarul-islam-32a229318/"
+            href="https://www.linkedin.com/in/ansarul-islam10"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -71,11 +66,21 @@ const Hero = () => {
           </a>
         </div>
 
-        <a href={resume} download>
-          <button className="shiny-button btn btn-outline border-cyan-500 text-cyan-500 hover:text-cyan-600 font-bold uppercase rounded-md hover:bg-transparent mt-6">
-            Download Resume
-          </button>
-        </a>
+        <div className="flex flex-col sm:flex-row gap-4 mt-6">
+          {/* Download Resume */}
+          <a href={resume} download>
+            <button className="shiny-button btn btn-sm sm:btn-md text-gray-900 font-bold uppercase rounded-md hover:bg-cyan-600 border-none bg-cyan-500">
+              Download Resume
+            </button>
+          </a>
+
+          {/* Preview Resume */}
+          <a href={resume} target="_blank" rel="noopener noreferrer">
+            <button className="shiny-button btn btn-outline border-cyan-500 text-cyan-500 hover:text-cyan-600 font-bold uppercase rounded-md hover:bg-transparent">
+              Preview Resume
+            </button>
+          </a>
+        </div>
       </div>
 
       <div className="relative animate__animated animate__zoomIn z-10 mt-6 md:mt-0 sm:w-[380px] sm:h-[380px] rounded-3xl">

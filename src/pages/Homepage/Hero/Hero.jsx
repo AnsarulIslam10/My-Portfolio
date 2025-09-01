@@ -71,7 +71,7 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="shiny-button btn btn-sm sm:btn-md text-gray-900 font-bold uppercase rounded-md hover:bg-cyan-600 border-none bg-cyan-500">
+            <button className="shiny-button btn text-gray-900 font-bold uppercase rounded-md hover:bg-cyan-600 border-none bg-cyan-500">
               Download Resume
             </button>
           </a>

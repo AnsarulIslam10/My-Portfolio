@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
 import Loading from "../../components/Loading/Loading";
-import Tilt from 'react-parallax-tilt';
+import Tilt from "react-parallax-tilt";
 const ProjectDetails = () => {
   const { id } = useParams();
   const [project, setProject] = useState(null);
@@ -105,19 +105,19 @@ const ProjectDetails = () => {
           {project.technologies.map((tech, index) => (
             <Tilt
               key={index}
-              className="background-stripes parallax-effect bg-black/20"
-              perspective={500}
+              className="parallax-effect"
+              perspective={600}
+              scale={1.05}
             >
-              <div
-                
-                className="text-center shadow-lg p-4 flex flex-col items-center justify-center"
-              >
+              <div className="flex flex-col items-center justify-center bg-black/20 p-6 rounded-xl border border-cyan-500/20 transition-all duration-300 hover:scale-105 w-36 h-36 mx-auto">
                 <img
                   src={tech.logo}
                   alt={tech.name}
                   className="w-12 h-12 mb-2"
                 />
-                <p className="text-gray-300 text-xl">{tech.name}</p>
+                <p className="text-base font-semibold text-gray-200 text-center">
+                  {tech.name}
+                </p>
               </div>
             </Tilt>
           ))}
@@ -125,15 +125,17 @@ const ProjectDetails = () => {
       </div>
 
       <div className="mb-8 mt-4">
-          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">Key Features</h2>
-          <ul className="list-disc pl-6 text-gray-300">
-            {Object.entries(project.features).map(([key, value], index) => (
-              <li key={index} className="mb-2">
-                <strong>{key}:</strong> {value}
-              </li>
-            ))}
-          </ul>
-        </div>
+        <h2 className="text-2xl font-semibold text-cyan-400 mb-4">
+          Key Features
+        </h2>
+        <ul className="list-disc pl-6 text-gray-300">
+          {Object.entries(project.features).map(([key, value], index) => (
+            <li key={index} className="mb-2">
+              <strong>{key}:</strong> {value}
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <div className="mt-8">
         <h2 className="text-2xl font-semibold mb-4 text-cyan-500">

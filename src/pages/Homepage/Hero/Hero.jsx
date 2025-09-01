@@ -1,8 +1,6 @@
-import React from "react";
 import { FaCode, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { useTypewriter } from "react-simple-typewriter";
 import riyad from "../../../assets/2.jpg";
-import resume from "../../../assets/Resume_of_Ansarul_Islam.pdf";
 import back from "../../../assets/back.jpg";
 
 const Hero = () => {
@@ -68,14 +66,22 @@ const Hero = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 mt-6">
           {/* Download Resume */}
-          <a href={resume} download>
+          <a
+            href="https://drive.google.com/uc?export=download&id=1SYScigjfewK8LriSF6zWz9PZsqd2EYKL"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="shiny-button btn btn-sm sm:btn-md text-gray-900 font-bold uppercase rounded-md hover:bg-cyan-600 border-none bg-cyan-500">
               Download Resume
             </button>
           </a>
 
           {/* Preview Resume */}
-          <a href={resume} target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://drive.google.com/file/d/1SYScigjfewK8LriSF6zWz9PZsqd2EYKL/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="shiny-button btn btn-outline border-cyan-500 text-cyan-500 hover:text-cyan-600 font-bold uppercase rounded-md hover:bg-transparent">
               Preview Resume
             </button>

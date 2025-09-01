@@ -1,8 +1,7 @@
+import { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
-import resume from "../../assets/Resume_of_Ansarul_Islam.pdf";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { scroller } from "react-scroll";
-import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const location = useLocation();
@@ -92,7 +91,7 @@ const Navbar = () => {
                   onClick={() => handleNavClick(item)}
                   className={`cursor-pointer px-2 py-1 rounded-md transition duration-200 ${
                     activeItem === item.id
-                      ? "bg-cyan-500 text-black font-bold"
+                      ? "border-b rounded-none border-cyan-500 text-white font-bold"
                       : "text-white hover:text-cyan-500"
                   }`}
                 >
@@ -133,7 +132,13 @@ const Navbar = () => {
 
       {/* Navbar End */}
       <div className="navbar-end">
-        <a href={resume} download>
+        <a
+          href={
+            "https://drive.google.com/uc?export=download&id=1SYScigjfewK8LriSF6zWz9PZsqd2EYKL"
+          }
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button className="btn btn-sm sm:btn-md animate__animated animate__pulse animate__infinite animate__slower shiny-button text-gray-900 font-bold uppercase rounded-md hover:bg-cyan-600 border-none bg-cyan-500">
             Download Resume
           </button>
